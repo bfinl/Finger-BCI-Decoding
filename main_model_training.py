@@ -48,10 +48,8 @@ params = {
     'nclass': nclass
 }
 # Specify the paths to data and the models
-# data_folder = 'pathToData'
-data_folder = '/home/yidand/FingerMovement/code_share/data_example'
+data_folder = 'pathToData'
 save_folder = 'pathToSave'
-save_folder = '/home/yidand/FingerMovement/code_share/savedmodels'
 if not os.path.exists(save_folder):
     os.mkdir(save_folder)
 
