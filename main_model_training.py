@@ -55,10 +55,7 @@ if not os.path.exists(save_folder):
 
 data_paths = generate_paths(subj_id, task, nclass, session_num, model_type = modeltype, data_folder = data_folder)
 
-
 data, label, params = load_and_filter_data(data_paths, params)
-
-np.savez('/home/yidand/FingerMovement/code_share/my_arrays.npz', array1=data, array2=label)
 
 save_name = os.path.join(save_folder, f'S{subj_id:02}_Sess{session_num:02}_{task}_{nclass}class_{modeltype}.h5')
 
